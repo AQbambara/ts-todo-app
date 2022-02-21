@@ -1,4 +1,6 @@
 // TodoTitleコンポーネント
+import React, { memo } from "react"
+
 
 type Props = {
     title: string
