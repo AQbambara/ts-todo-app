@@ -1,20 +1,19 @@
 // TodoItemコンポーネント
 import { Todo } from "./types/Types"
-import * as todoData from "../apis/todos"
 
 type Props = {
-    todo: Todo
-    toggleTodoListItemStatus: any, 
-    deleteTodoListItem: any
+    todo: Todo,
+    toggleTodoListItemStatus: Function, 
+    deleteTodoListItem: Function
 }
 
 export const TodoItem: React.FunctionComponent<Props> = ({todo, toggleTodoListItemStatus, deleteTodoListItem }) => {
 
-    const handleToggleTodoListItemStatus = () => {
+    const handleToggleTodoListItemStatus = (): void => {
         toggleTodoListItemStatus(todo.id, todo.done)
     }
 
-    const handleDeleteTodoListItem = () => {
+    const handleDeleteTodoListItem = (): void => {
         deleteTodoListItem(todo.id)
     }
 
