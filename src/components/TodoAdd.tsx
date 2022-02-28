@@ -1,7 +1,8 @@
+
 type Props = {
     buttonText: string,
     inputEl: any,
-    handleAddTodoListItem: any 
+    handleAddTodoListItem: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 export const TodoAdd: React.FunctionComponent<Props> = ({ buttonText, inputEl, handleAddTodoListItem }) => {

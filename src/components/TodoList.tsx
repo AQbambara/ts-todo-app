@@ -5,8 +5,8 @@ import { TodoTitle } from "./TodoTitle"
 
 type Props = {
     todoList: Array<Todo>,
-    toggleTodoListItemStatus: any,
-    deleteTodoListItem: any,
+    toggleTodoListItemStatus: Function,
+    deleteTodoListItem: Function,
     title: string,
     as: string
 }
